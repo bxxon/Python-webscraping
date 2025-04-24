@@ -33,3 +33,5 @@ Bu projeyi çalıştırabilmek için aşağıdaki kütüphanelerin kurulu olmas�
 
 ```bash
 pip install requests beautifulsoup4 selenium webdriver_manager
+## kullanım
+python scraping.py
