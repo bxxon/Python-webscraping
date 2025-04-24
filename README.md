@@ -29,9 +29,8 @@ Bu projeyi çalıştırabilmek için aşağıdaki kütüphanelerin kurulu olmas�
 - **webdriver_manager**: WebDriver'ın doğru sürümünü otomatik olarak indirir.
 - **re**: Regex kullanarak metin işleme.
 
-### Kütüphaneleri Yüklemek İçin:
+### Kütüphaneleri Yüklemek Ve Kullanım İçin: 
 
 ```bash
 pip install requests beautifulsoup4 selenium webdriver_manager
-## kullanım
 python scraping.py
