@@ -1,36 +1,72 @@
-# Web Scraping Projesi
 
-Bu proje, farklı web sayfalarından veri çekmek için kullanılan bir web scraping aracıdır. Kullanıcılar, URL girerek ve belirli bir sınıf adı girerek web sayfasından verileri çekebilirler. Kodlar, statik ve dinamik web sayfaları için farklı yöntemler kullanarak veri çekme işlemlerini gerçekleştirir.
+# Web Scraping Project
 
-## Proje Özellikleri
+This project is a web scraping tool designed to extract data from different types of web pages.  
+Users can input a URL and a specific class name to extract content from the web page.  
+The code supports both static and dynamic websites using different approaches.
 
-- **Statik Sayfalar**: HTML içeriğini doğrudan analiz eden ve verileri çeken yöntemler.
-- **Dinamik Sayfalar**: Selenium ve WebDriver kullanarak dinamik olarak yüklenen içeriklerden veri çeker.
-- **Arayüz**: Kullanıcı, URL ve class bilgisi girerek verilerini kolayca çekebilir.
+## Project Features
 
-## Etik Kurallar
+- **Static Pages**: Uses direct HTML parsing to extract data.
+- **Dynamic Pages**: Uses Selenium and WebDriver to extract content that loads dynamically.
+- **User Interface**: Allows users to enter the URL and class name to easily extract desired data.
 
-Bu projeye katkı sağlarken lütfen aşağıdaki etik kurallara uyduğunuzdan emin olun:
+## Ethical Guidelines
 
-- **Dürüstlük**: Kodunuzu ve katkılarınızı dürüst bir şekilde yazın. Başkalarının çalışmalarını alıp kendi yazılımınız olarak sunmayın.
-- **Saygı**: Diğer geliştiricilere saygılı ve adil davranın. Katkılarınızda olumlu ve yapıcı bir tutum sergileyin.
-- **Erişilebilirlik**: Kodunuzu mümkün olduğunca erişilebilir hale getirin, açıklamalar ekleyin ve belgeleri güncel tutun.
-- **İzinler ve Lisanslar**: Kullanmakta olduğunuz üçüncü parti yazılımlarının lisanslarına ve haklarına saygı gösterin. Bu projede kullanılan kütüphanelerin lisanslarına göz atın ve uygun şekilde kullanın.
-- **Yasal Uyumluluk**: Yazılımın yasalarla uyumlu olduğundan emin olun. Özellikle kişisel verilerin korunmasına yönelik yasalar (örneğin GDPR) hakkında bilgi sahibi olun. Web scraping işlemleri yaparken, sitelerin kullanım şartlarına uymaya özen gösterin ve herhangi bir veriyi toplarken sitenin robots.txt dosyasına dikkat edin.
-- **Adil Kullanım**: Web sayfalarından veri çekerken adil kullanım ilkesine sadık kalın. Web sitelerinin yükünü artıracak şekilde aşırı trafik gönderiminden kaçının.
+When contributing to this project, please ensure you follow the ethical guidelines below:
 
-## Gereksinimler
+- **Integrity**: Write your code and contributions honestly. Do not present others’ work as your own.
+- **Respect**: Treat other developers respectfully and fairly. Be positive and constructive in your contributions.
+- **Accessibility**: Make your code as accessible as possible by adding explanations and keeping documentation updated.
+- **Permissions and Licenses**: Respect the licenses and rights of any third-party software used. Review and follow the licenses of the libraries included in this project.
+- **Legal Compliance**: Ensure that the software complies with legal regulations. Pay particular attention to data privacy laws (e.g., GDPR). When scraping, follow the website’s terms of use and check their `robots.txt` file.
+- **Fair Use**: Respect fair use policies when scraping data. Avoid sending excessive requests that could overload websites.
 
-Bu projeyi çalıştırabilmek için aşağıdaki kütüphanelerin kurulu olması gerekmektedir:
+## Requirements
 
-- **requests**: Web sayfalarına HTTP istekleri yapmak için kullanılır.
-- **beautifulsoup4**: HTML ve XML verilerini analiz etmek için kullanılır.
-- **selenium**: Dinamik web sayfalarından veri çekmek için kullanılır.
-- **webdriver_manager**: WebDriver'ın doğru sürümünü otomatik olarak indirir.
-- **re**: Regex kullanarak metin işleme.
+To run this project, you need the following Python libraries installed:
 
-### Kütüphaneleri Yüklemek Ve Kullanım İçin: 
+- **requests**: For sending HTTP requests to web pages.
+- **beautifulsoup4**: For parsing HTML and XML content.
+- **selenium**: For scraping data from dynamic web pages.
+- **webdriver_manager**: Automatically downloads the correct version of WebDriver.
+- **re**: For text processing using regular expressions.
+
+### Install Required Libraries
+
+Install the required libraries one by one using the following commands:
 
 ```bash
-pip install requests beautifulsoup4 selenium webdriver_manager
-python scraping.py
+pip install requests
+pip install beautifulsoup4
+pip install selenium
+pip install webdriver_manager
+```
+
+> ⚠️ The `re` module is part of Python's standard library and does not require installation.
+
+---
+
+## University Email Scraper Extension
+
+This Python-based tool scrapes `.edu` email addresses from university websites.  
+It is designed to support research and academic projects by collecting publicly available contact information.
+
+### Features
+
+- Extracts email addresses ending with `.edu`
+- Parses HTML pages using **BeautifulSoup4**
+- Sends HTTP requests via **Requests**
+- Filters data using **Regular Expressions**
+
+### Use Case
+
+Useful for:
+- Creating datasets for academic conferences
+- Research outreach
+- Building contact lists from specific university departments
+
+### Disclaimer
+
+This tool is for educational and research purposes only.  
+Please ensure compliance with website terms of service and data privacy regulations when using this tool.
